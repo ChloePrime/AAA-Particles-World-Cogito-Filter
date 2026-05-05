@@ -195,12 +195,20 @@ neoForge.ideSyncTask generateModMetadata
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
+            artifactId base.archivesName.get()
             from components.java
         }
     }
     repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
+        if (project.hasProperty("CHLOE_MAVEN_USERNAME")) {
+            maven {
+                name = "Chloe_Maven"
+                url = "https://maven.chloeprime.cn:4080/releases/"
+                credentials {
+                    username "$CHLOE_MAVEN_USERNAME"
+                    password "$CHLOE_MAVEN_PASSWORD"
+                }
+            }
         }
     }
 }
