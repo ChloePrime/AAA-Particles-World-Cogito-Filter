@@ -60,7 +60,7 @@ dependencies {
         runtimeOnly "top.theillusivec4.curios:curios-neoforge:$curios_version+$minecraft_version"
 
         // AAAPW
-        implementation "cn.chloeprime:aaa_particles_world-neoforge-$minecraft_version:$aaapw_version"
+        implementation "cn.chloeprime.aaa_particles_world:aaa_particles_world-neoforge-$minecraft_version:$aaapw_version"
     }
 
     // Example optional mod dependency with JEI

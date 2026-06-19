@@ -11,10 +11,14 @@ public final class AAAPWConfigController {
         ClientConfig.ENABLE_CRIT.set(enabled);
         ClientConfig.ENABLE_MAGIC_CRIT.set(enabled);
         ClientConfig.ENABLE_LIGHTNING.set(enabled);
-        ClientConfig.ENABLE_EXPLOSION.set(enabled);
+        ClientConfig.ENABLE_SMALL_EXPLOSION.set(enabled);
+        ClientConfig.ENABLE_BIG_EXPLOSION.set(enabled);
         ClientConfig.ENABLE_LOOT_BEAM.set(enabled);
         ClientConfig.ENABLE_LOOT_SOUND.set(enabled);
         ClientConfig.ENABLE_FIREBALL_TRAIL.set(enabled);
+        ClientConfig.ENABLE_FIREFLIES.set(enabled);
+        ClientConfig.MC26_1_REMOVE_POOF_FOR_SMALL_EXPLOSION.set(enabled);
+        ClientConfig.MC26_1_REMOVE_POOF_FOR_LARGE_EXPLOSION.set(enabled);
         ClientConfig.SPEC.save();
     }
 
